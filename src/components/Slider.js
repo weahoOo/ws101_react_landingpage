@@ -25,7 +25,7 @@ function Slider() {
                 </div>
                 <div className="col-md-6">
                   <div className="img-box">
-                    <img src="/images/slider-img.png" alt="Full-stack Development" />
+                    <img src="/public/images/slider-img.png" alt="Full-stack Development" />
                   </div>
                 </div>
               </div>
@@ -46,7 +46,7 @@ function Slider() {
                 </div>
                 <div className="col-md-6">
                   <div className="img-box">
-                    <img src="/images/slider-img.png" alt="Front-end Development" />
+                    <img src="/public/images/slider-img.png" alt="Front-end Development" />
                   </div>
                 </div>
               </div>
@@ -67,7 +67,7 @@ function Slider() {
                 </div>
                 <div className="col-md-6">
                   <div className="img-box">
-                    <img src="/images/slider-img.png" alt="Back-end Development" />
+                    <img src="/public/images/slider-img.png" alt="Back-end Development" />
                   </div>
                 </div>
               </div>

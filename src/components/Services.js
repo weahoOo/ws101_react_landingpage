@@ -13,7 +13,7 @@ function Services() {
             <div className="box">
               <div className="img-box">
                 {/* Use public folder path without import */}
-                <img src="/images/s1.png" alt="Service 1" />
+                <img src="/public/images/s1.png" alt="Service 1" />
               </div>
               <div className="detail-box">
                 <h5>E-commerce Development</h5>
@@ -24,7 +24,7 @@ function Services() {
           <div className="col-md-4">
             <div className="box">
               <div className="img-box">
-                <img src="/images/s2.png" alt="Service 2" />
+                <img src="/public/images/s2.png" alt="Service 2" />
               </div>
               <div className="detail-box">
                 <h5>API Development and Integration</h5>
@@ -35,7 +35,7 @@ function Services() {
           <div className="col-md-4">
             <div className="box">
               <div className="img-box">
-                <img src="/images/s3.png" alt="Service 3" />
+                <img src="/public/images/s3.png" alt="Service 3" />
               </div>
               <div className="detail-box">
                 <h5>Web Hosting Services</h5>

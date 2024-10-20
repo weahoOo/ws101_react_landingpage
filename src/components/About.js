@@ -11,7 +11,7 @@ function About() {
           <div className="col-md-6">
             <div className="img-box">
               {/* Use public folder path without import */}
-              <img src="/images/about-img.png" alt="About Us" />
+              <img src="/public/images/about-img.png" alt="About Us" />
             </div>
           </div>
           <div className="col-md-6">
