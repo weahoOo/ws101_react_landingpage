@@ -1,4 +1,5 @@
 import React from 'react';
+import './About.css'; 
 
 function About() {
   return (
@@ -10,8 +11,8 @@ function About() {
         <div className="row">
           <div className="col-md-6">
             <div className="img-box">
-              {/* Use public folder path without import */}
-              <img src="/public/images/about-img.png" alt="About Us" />
+              {/* Image from public folder */}
+              <img src={`${process.env.PUBLIC_URL}/images/about-img.png`} alt="About Us" />
             </div>
           </div>
           <div className="col-md-6">

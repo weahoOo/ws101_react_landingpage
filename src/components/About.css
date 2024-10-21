@@ -1,0 +1,24 @@
+.about_section {
+    background-color: var(--primary2);
+    color: var(--white);
+  }
+  
+  .about_section .img-box img {
+    width: 100%; 
+    height: auto;
+  }
+  
+  .about_section .detail-box {
+    padding: 20px;
+  }
+  
+  .about_section .detail-box h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .about_section .detail-box p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  

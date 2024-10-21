@@ -19,13 +19,13 @@ function Slider() {
                   <div className="detail-box">
                     <h1>Full-stack <br />Development</h1>
                     <p>
-                    Full-stack development refers to the practice of designing, building, and maintaining the entire software stack of a web application. This includes both the frontend (client-side) and backend (server-side) components, as well as the database and any other necessary infrastructure. A full-stack developer is someone who has expertise in working with both the frontend and backend technologies, allowing them to handle all aspects of web application development.
+                      Full-stack development refers to the practice of designing, building, and maintaining the entire software stack of a web application. This includes both the frontend (client-side) and backend (server-side) components, as well as the database and any other necessary infrastructure. A full-stack developer is someone who has expertise in working with both the frontend and backend technologies, allowing them to handle all aspects of web application development.
                     </p>
                   </div>
                 </div>
                 <div className="col-md-6">
                   <div className="img-box">
-                    <img src="/public/images/slider-img.png" alt="Full-stack Development" />
+                    <img src={process.env.PUBLIC_URL + '/images/slider-img.png'} alt="Full-stack Development" />
                   </div>
                 </div>
               </div>
@@ -40,13 +40,13 @@ function Slider() {
                   <div className="detail-box">
                     <h1>Front-end <br />Development</h1>
                     <p>
-                    Front-end development is the process of designing and implementing the user interface (UI) and user experience (UX) of a web application. It involves creating visually appealing and interactive elements that users interact with directly. The primary technologies and concepts associated with front-end development include: HTML, CSS, and JavaScript.
+                      Front-end development is the process of designing and implementing the user interface (UI) and user experience (UX) of a web application. It involves creating visually appealing and interactive elements that users interact with directly. The primary technologies and concepts associated with front-end development include: HTML, CSS, and JavaScript.
                     </p>
                   </div>
                 </div>
                 <div className="col-md-6">
                   <div className="img-box">
-                    <img src="/public/images/slider-img.png" alt="Front-end Development" />
+                    <img src={process.env.PUBLIC_URL + '/images/slider-img.png'} alt="Front-end Development" />
                   </div>
                 </div>
               </div>
@@ -61,13 +61,13 @@ function Slider() {
                   <div className="detail-box">
                     <h1>Back-end <br />Development</h1>
                     <p>
-                    Back-end development involves building the server-side logic and database components of a web application. It is responsible for processing user requests, managing data, and ensuring the overall functionality of the application. Key aspects of back-end development include Server, Databases, APIs, and Programming Languages like Python.
+                      Back-end development involves building the server-side logic and database components of a web application. It is responsible for processing user requests, managing data, and ensuring the overall functionality of the application. Key aspects of back-end development include Server, Databases, APIs, and Programming Languages like Python.
                     </p>
                   </div>
                 </div>
                 <div className="col-md-6">
                   <div className="img-box">
-                    <img src="/public/images/slider-img.png" alt="Back-end Development" />
+                    <img src={process.env.PUBLIC_URL + '/images/slider-img.png'} alt="Back-end Development" />
                   </div>
                 </div>
               </div>
@@ -75,21 +75,21 @@ function Slider() {
           </div>
         </div>
 
-        {/* Carousel Indicators */}
-        <ol className="carousel-indicators">
-          <li
-            className={activeIndex === 0 ? 'active' : ''}
+        {/* Custom Carousel Indicators (Circles) */}
+        <div className="carousel-indicators">
+          <button
+            className={`indicator ${activeIndex === 0 ? 'active' : ''}`}
             onClick={() => handleIndicatorClick(0)}
-          ></li>
-          <li
-            className={activeIndex === 1 ? 'active' : ''}
+          ></button>
+          <button
+            className={`indicator ${activeIndex === 1 ? 'active' : ''}`}
             onClick={() => handleIndicatorClick(1)}
-          ></li>
-          <li
-            className={activeIndex === 2 ? 'active' : ''}
+          ></button>
+          <button
+            className={`indicator ${activeIndex === 2 ? 'active' : ''}`}
             onClick={() => handleIndicatorClick(2)}
-          ></li>
-        </ol>
+          ></button>
+        </div>
       </div>
     </section>
   );

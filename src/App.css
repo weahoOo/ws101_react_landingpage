@@ -1,4 +1,3 @@
-/* Variables */
 :root {
   --white: #ffffff;
   --black: #000000;
@@ -7,10 +6,10 @@
   --textCol: #1f1f1f;
 }
 
-/* Import fonts */
+
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap");
 
-/* Main styles */
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #0c0c0c;
@@ -211,15 +210,15 @@ a:focus {
   top: 0;
 }
 
-/* Slider section */
+
 .slider_section {
   flex: 1;
   display: flex;
   align-items: center;
   position: relative;
-  padding: 45px 0 145px; /* Ensure there is adequate space around */
-  background-color: var(--primary2); /* Optional: Add a background color */
-  color: var(--white); /* Set default text color */
+  padding: 45px 0 145px; 
+  background-color: var(--primary2); 
+  color: var(--white); 
 }
 
 .slider_section .row {
@@ -231,18 +230,18 @@ a:focus {
 }
 
 .slider_section .detail-box {
-  color: var(--white); /* Ensure the text is visible against the background */
+  color: var(--white); 
 }
 
 .slider_section .detail-box h1 {
-  font-size: 3rem; /* Adjust the font size as needed */
+  font-size: 3rem;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 15px;
 }
 
 .slider_section .detail-box p {
-  color: #fefefe; /* Ensure the paragraph text color is set correctly */
+  color: #fefefe; 
   font-size: 14px;
 }
 
@@ -251,7 +250,7 @@ a:focus {
 }
 
 .slider_section .img-box img {
-  width: 100%; /* Ensure the image scales correctly */
+  width: 100%;
   animation: upDown 5s infinite;
 }
 
@@ -268,29 +267,33 @@ a:focus {
 }
 
 .slider_section .carousel-indicators {
-  position: static; /* Adjust the position as needed */
+  position: absolute; 
+  bottom: 20px; 
+  left: 50%; 
+  transform: translateX(0%); 
   display: flex;
-  justify-content: center;
-  margin: 20px 0;
+  gap: 10px; 
+  z-index: 10; 
 }
 
-.slider_section .carousel-indicators li {
-  background-color: var(--white); /* Customize the color */
-  width: 12px;
-  height: 12px;
-  border-radius: 50%; /* Makes the indicators circles */
-  opacity: 1;
-  cursor: pointer; /* Pointer for better UI feedback */
+.slider_section .indicator {
+  width: 15px; 
+  height: 15px; 
+  border-radius: 50%; 
+  background-color: var(--white); 
+  border: none;
+  cursor: pointer; 
+  transition: background-color 0.3s, width 0.3s, height 0.3s; 
 }
 
-.slider_section .carousel-indicators li.active {
+.slider_section .indicator.active {
   width: 20px;
-  height: 20px;
-  background-color: var(--primary1); /* Color when active */
+  height: 20px; 
+  background-color: var(--primary1);
 }
 
 
-/* Service section */
+
 .service_section {
   position: relative;
 }
@@ -351,7 +354,7 @@ a:focus {
   transition: all 0.3s;
 }
 
-/* About section */
+
 .about_section {
   background-color: var(--primary2);
   color: var(--white);
@@ -393,7 +396,7 @@ a:focus {
   color: var(--black);
 }
 
-/* Contact section */
+
 .contact_section {
   padding: 45px 0;
 }
@@ -433,7 +436,7 @@ a:focus {
   color: var(--white);
 }
 
-/* Footer section */
+
 .footer_section {
   background-color: var(--primary2);
   color: var(--white);
